@@ -16,7 +16,7 @@ foreach ($client->parseEvents() as $event) {
                         'messages' => [
                             [
                                 'type' => 'text',
-                                'text' => implode(",",$event)
+                                'text' => $event['source']
                             ]
                         ]
                     ]);
