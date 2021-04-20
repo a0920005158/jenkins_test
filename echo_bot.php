@@ -16,7 +16,7 @@ foreach ($client->parseEvents() as $event) {
                         'messages' => [
                             [
                                 'type' => 'text',
-                                'text' => $event['source']
+                                'text' => json_encode($event['source'])
                             ]
                         ]
                     ]);
